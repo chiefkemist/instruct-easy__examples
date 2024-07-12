@@ -9,7 +9,9 @@ console = Console()
 
 
 class PizzaOrder(BaseModel):
-    order_confirmation_or_denial: str = Field(..., description="Order confirmation or denial message.")
+    order_confirmation_or_denial: str = Field(
+        ..., description="Order confirmation or denial message."
+    )
     pizza: Optional[List[str]] = Field(..., description="List of pizza items to order.")
     drink: Optional[List[str]] = Field(..., description="List of drink items to order.")
     side: Optional[List[str]] = Field(..., description="List of side items to order.")
