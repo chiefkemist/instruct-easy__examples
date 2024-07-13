@@ -64,7 +64,7 @@ idna==3.7
     # via httpx
     # via requests
     # via yarl
-instruct-easy @ git+https://github.com/chiefkemist/instruct-easy@c5817746589aab72c31288d7dfcd9f6ea1e73f28
+instruct-easy @ git+https://github.com/chiefkemist/instruct-easy@6463693211b639a7bec35538c0414a6911684669
     # via instruct-easy-examples
 instructor==1.3.4
     # via instruct-easy
@@ -100,6 +100,8 @@ pygments==2.18.0
     # via rich
 pyyaml==6.0.1
     # via huggingface-hub
+pyzmq==26.0.3
+    # via instruct-easy-examples
 requests==2.32.3
     # via huggingface-hub
 rich==13.7.1
