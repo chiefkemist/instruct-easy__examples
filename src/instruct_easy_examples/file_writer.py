@@ -19,7 +19,7 @@ context = [
     context=context,
     model=LLMModel.Claude35_Sonnet,
 )
-@file_writer(base_dir="file_writer_output")
+@file_writer(base_dir="../../file_writer_output")
 def my_function(_: str, input: List[FileDetails] = None): ...
 
 
@@ -40,7 +40,22 @@ if __name__ == "__main__":
     "Thank you."
     my_function(message_js)  # Example usage
 
-    message_lisp = "Hello Professor, how would you write the Y Combinator function in Lisp using the standard library?"
+    # message_lisp = "Hello Professor, how would you write the Y Combinator function in Lisp using the standard library?"
+    # "Place the code at the base of my project directory."
+    # "Thank you."
+    # my_function(message_lisp)  # Example usage
+
+    message_scheme = "Hello Professor, how would you write the Y Combinator function in Scheme using the standard library?"
     "Place the code at the base of my project directory."
     "Thank you."
-    my_function(message_lisp)  # Example usage
+    my_function(message_scheme)  # Example usage
+
+    message_nim = "Hello Professor, how would you write the Y Combinator function in Nim using the standard library?"
+    "Place the code at the base of my project directory."
+    "Thank you."
+    my_function(message_nim)  # Example usage
+
+    # message_zig = "Hello Professor, how would you write the Y Combinator function in Zig using the standard library?"
+    # "Place the code at the base of my project directory."
+    # "Thank you."
+    # my_function(message_zig)  # Example usage
