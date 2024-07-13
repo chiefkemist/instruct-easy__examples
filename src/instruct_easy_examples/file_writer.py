@@ -33,3 +33,14 @@ if __name__ == "__main__":
     message_rb = "Hello Professor, how would you write the Y Combinator function in Ruby using the standard library?"
     "Place the code at the base of my project directory."
     "Thank you."
+    my_function(message_rb)  # Example usage
+
+    message_js = "Hello Professor, how would you write the Y Combinator function in Javascript using the standard library?"
+    "Place the code at the base of my project directory."
+    "Thank you."
+    my_function(message_js)  # Example usage
+
+    message_lisp = "Hello Professor, how would you write the Y Combinator function in Lisp using the standard library?"
+    "Place the code at the base of my project directory."
+    "Thank you."
+    my_function(message_lisp)  # Example usage

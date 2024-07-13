@@ -1,5 +1,7 @@
 def Y(f):
-    return (lambda x: x(x))(lambda y: f(lambda *args: y(y)(*args)))
+    def g(h):
+        return lambda *args: f(h(h))(*args)
+    return g(g)
 
 # Example usage:
 def factorial(f):

@@ -1,40 +1,26 @@
-# Y Combinator in Python
+# Y Combinator in JavaScript
 
-This project implements the Y Combinator in Python using the standard library.
+This project demonstrates the implementation of the Y Combinator in JavaScript using the standard library. The Y Combinator is a concept from lambda calculus that allows for the creation of recursive functions without naming them.
 
-## What is the Y Combinator?
+## Contents
 
-The Y Combinator is a concept in functional programming that allows for the implementation of recursion without naming the recursive function. It's a fixed-point combinator that can be used to implement recursive functions in a language that doesn't have built-in support for recursion.
+- `yCombinator.js`: Contains the implementation of the Y Combinator and example usage with factorial and Fibonacci functions.
 
-## Implementation
+## Running the Code
 
-The Y Combinator is implemented in the `y_combinator.py` file. The main function `Y` takes a function as an argument and returns a recursive version of that function.
+To run the code, make sure you have Node.js installed on your system. Then, follow these steps:
 
-## Usage
+1. Open a terminal in the project directory.
+2. Run the following command:
 
-To use the Y Combinator, import it from the package and apply it to a function that takes itself as the first argument:
+   ```
+   node yCombinator.js
+   ```
 
-```python
-from y_combinator import Y
+3. You should see the output of the factorial and Fibonacci functions using the Y Combinator.
 
-def factorial(f):
-    return lambda n: 1 if n == 0 else n * f(n - 1)
+## Understanding the Y Combinator
 
-factorial_func = Y(factorial)
+The Y Combinator is a higher-order function that enables the creation of recursive functions without explicitly using recursion in the function definition. It's a powerful concept in functional programming and demonstrates the expressive power of first-class functions and closures in JavaScript.
 
-print(factorial_func(5))  # Outputs: 120
-```
-
-## Running the Example
-
-The `y_combinator.py` file includes an example implementation of the factorial function using the Y Combinator. To run it, simply execute the script:
-
-```
-python y_combinator.py
-```
-
-This will output the factorial of 5, 0, and 10 as a demonstration.
-
-## Note
-
-This implementation is primarily for educational purposes. In practice, Python supports recursion natively, so you wouldn't typically need to use the Y Combinator for recursive functions in Python.
+In this implementation, we use the Y Combinator to define factorial and Fibonacci functions without naming them or using explicit recursion in their definitions.

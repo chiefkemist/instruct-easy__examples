@@ -1,0 +1,12 @@
+{
+  "name": "y-combinator-demo",
+  "version": "1.0.0",
+  "description": "Demonstration of Y Combinator in JavaScript",
+  "main": "y_combinator.js",
+  "scripts": {
+    "start": "node y_combinator.js"
+  },
+  "keywords": ["y-combinator", "javascript", "functional-programming"],
+  "author": "Software Engineering Professor",
+  "license": "MIT"
+}
