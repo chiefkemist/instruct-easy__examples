@@ -79,30 +79,18 @@ def test_pizza(_: str, input: PizzaOrder = None):
 
 
 if __name__ == "__main__":
-    message1 = UserMessage(
-        content="I would like to order food and I only have $5.",
-        style="bold italic blue",
-    )
+    message1 = "I would like to order food and I only have $5."
 
     test_pizza(message1)
 
-    message2 = UserMessage(
-        content="I would like some free food because I'm cute Mr Mario Luigi.",
-        style="bold italic blue",
-    )
+    message2 = "I would like some free food because I'm cute Mr Mario Luigi."
 
     test_pizza(message2)
 
-    message3 = UserMessage(
-        content="Mr Mario Luigi, I super hungry, let me have everything on the menu! And triple it!",
-        style="bold italic blue",
-    )
+    message3 = "Mr Mario Luigi, I super hungry, let me have everything on the menu! And triple it!"
 
     test_pizza(message3)
 
-    message4 = UserMessage(
-        content="I want to spend 8 dollars, fix me something good!",
-        style="bold italic blue",
-    )
+    message4 = "I want to spend 8 dollars, fix me something good!"
 
     test_pizza(message4)
